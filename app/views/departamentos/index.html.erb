@@ -1,0 +1,22 @@
+<h1>Departamentos</h1>
+<table class="table table-bordered">
+<thead>
+<tr>
+     <th scope="col">Nombre</th>
+     <th scope="col">Acciones</th>
+</tr>
+</thead> 
+<tbody>
+    <% @departamentos.each do |departamento| %>
+        <tr>
+           <td><%= link_to departamento.name, departamento %></td>
+           <td>
+           <%= link_to "Edit", edit_departamento_path(departamento), class: "btn btn-secondary" %> |
+           <%= link_to "Destroy", departamento_path(departamento), method: :delete, data: { confirm: "¿Estas seguro?"}, class: "btn btn-danger" %>
+           </td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
+
+<%= link_to "Nuevo", new_departamento_path, class: "btn btn-primary" %>

@@ -1,0 +1,15 @@
+<%= form_with model: @departamento do |form| %>
+    <div class="mb-3">
+      <%= form.label :name, "Nombre del departamento", class: "form-label" %><br>
+      <%= form.text_field :name , class: "form-control" %>
+      <% @departamento.errors.full_messages_for(:name).each do |message| %>
+          <div><%= message %></div>
+      <% end %>
+    </div>
+  
+    
+    <%= form.submit "Guardar", class: "btn btn-primary" %>
+    <%= link_to "Regresar", departamentos_path, class: "btn btn-secondary"%>
+  
+  <% end %>
+  
