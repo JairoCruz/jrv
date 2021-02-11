@@ -2,3 +2,33 @@
 <p>
 <%= @departamento.name %>
 </p>
+<h2>Agrega una JRV</h2>
+<%= form_with model: [@departamento, @departamento.jrvs.build ] do |f| %>
+    <p>
+        <%= f.label :junta %>
+        <%= f.text_field :junta %>
+    </p>
+    <p>
+        <%= f.label :municipio %>
+        <%= f.text_field :municipio %>
+    </p>
+    <%= f.submit %>
+<% end %>
+
+<h3>JRVs</h3>
+<table class="table table-bordered">
+<thead>
+<tr>
+     <th scope="col">N° JRV</th>
+     <th scope="col">Municipio</th>
+</tr>
+</thead> 
+<tbody>
+    <% @departamento.jrvs.each do |jrv| %>
+        <tr>
+           <td><%= link_to jrv.junta, [jrv.departamento, jrv] %></td>
+           <td><%= jrv.municipio %></td>
+        </tr>
+    <% end %>
+</tbody>
+</table>
