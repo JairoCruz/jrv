@@ -3,6 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.0'
 
+# This gem work for paginate and bootstrap
+gem 'will_paginate-bootstrap4'
+
+# Use will_paginate for Paginate Data
+#gem 'will_paginate', '3.3.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.1'
 # Use postgresql as the database for Active Record

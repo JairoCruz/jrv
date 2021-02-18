@@ -1,0 +1,304 @@
+<div class="container-fluid">
+<h1>Dashboard</h1>
+
+<div class="table-responsive">
+<table class="table table-sm table-bordered text-center">
+<thead class="table-dark">
+    <tr>
+        <th scope="col">DEPARTAMENTO</th>
+        <th scope="col">FMLN</th>
+        <th scope="col">NUESTRO TIEMPO</th>
+        <th scope="col">NUEVAS IDEAS</th>
+        <th scope="col">PDC</th>
+        <th scope="col">PCN</th>
+        <th scope="col">GANA</th>
+        <th scope="col">CD</th>
+        <th scope="col">ARENA</th>
+        <th scope="col">DS</th>
+        <th scope="col">PCN DS</th>
+        <th scope="col">NUEVAS IDEAS GANA</th>
+        <th scope="col">ARENA DS</th>
+        <th scope="col">ARENA PCN</th>
+        <th scope="col">NO PARTIDARIO</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+    <th scope="row">AHUACHAPAN</th>
+    <td><%= @ahuachapan['FMLN'].blank? ? "-" : @ahuachapan['FMLN'] %></td>
+    <td><%= @ahuachapan['NUESTRO TIEMPO'].blank? ? "-" : @ahuachapan['NUESTRO TIEMPO'] %></td>
+    <td><%= @ahuachapan['NUEVAS IDEAS'].blank? ? "-" : @ahuachapan['NUEVAS IDEAS'] %></td>
+    <td><%= @ahuachapan['PDC'].blank? ? "-" : @ahuachapan['PDC'] %></td>
+    <td><%= @ahuachapan['PCN'].blank? ? "-" : @ahuachapan['PCN'] %></td>
+    <td><%= @ahuachapan['GANA'].blank? ? "-" : @ahuachapan['GANA'] %></td>
+    <td><%= @ahuachapan['CD'].blank? ? "-" : @ahuachapan['CD'] %></td>
+    <td><%= @ahuachapan['ARENA'].blank? ? "-" : @ahuachapan['ARENA'] %></td>
+    <td><%= @ahuachapan['DS'].blank? ? "-" : @ahuachapan['DS'] %></td>
+    <td><%= @ahuachapan['PCN-DS'].blank? ? "-" : @ahuachapan['PCN-DS'] %></td>
+    <td><%= @ahuachapan['NUEVAS IDEAS-GANA'].blank? ? "-" : @ahuachapan['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @ahuachapan['ARENA-DS'].blank? ? "-" : @ahuachapan['ARENA-DS'] %></td>
+    <td><%= @ahuachapan['ARENA-PCN'].blank? ? "-" : @ahuachapan['ARENA-PCN'] %></td>
+    <td><%= @ahuachapan['NO PARTIDARIO'].blank? ? "-" : @ahuachapan['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">SANTA ANA</th>
+    <td><%= @santa_ana['FMLN'].blank? ? "-" : @santa_ana['FMLN'] %></td>
+    <td><%= @santa_ana['NUESTRO TIEMPO'].blank? ? "-" : @santa_ana['NUESTRO TIEMPO'] %></td>
+    <td><%= @santa_ana['NUEVAS IDEAS'].blank? ? "-" : @santa_ana['NUEVAS IDEAS'] %></td>
+    <td><%= @santa_ana['PDC'].blank? ? "-" : @santa_ana['PDC'] %></td>
+    <td><%= @santa_ana['PCN'].blank? ? "-" : @santa_ana['PCN'] %></td>
+    <td><%= @santa_ana['GANA'].blank? ? "-" : @santa_ana['GANA'] %></td>
+    <td><%= @santa_ana['CD'].blank? ? "-" : @santa_ana['CD'] %></td>
+    <td><%= @santa_ana['ARENA'].blank? ? "-" : @santa_ana['ARENA'] %></td>
+    <td><%= @santa_ana['DS'].blank? ? "-" : @santa_ana['DS'] %></td>
+    <td><%= @santa_ana['PCN-DS'].blank? ? "-" : @santa_ana['PCN-DS'] %></td>
+    <td><%= @santa_ana['NUEVAS IDEAS-GANA'].blank? ? "-" : @santa_ana['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @santa_ana['ARENA-DS'].blank? ? "-" : @santa_ana['ARENA-DS'] %></td>
+    <td><%= @santa_ana['ARENA-PCN'].blank? ? "-" : @santa_ana['ARENA-PCN'] %></td>
+    <td><%= @santa_ana['NO PARTIDARIO'].blank? ? "-" : @santa_ana['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">SONSONATE</th>
+    <td><%= @sonsonate['FMLN'].blank? ? "-" : @sonsonate['FMLN'] %></td>
+    <td><%= @sonsonate['NUESTRO TIEMPO'].blank? ? "-" : @sonsonate['NUESTRO TIEMPO'] %></td>
+    <td><%= @sonsonate['NUEVAS IDEAS'].blank? ? "-" : @sonsonate['NUEVAS IDEAS'] %></td>
+    <td><%= @sonsonate['PDC'].blank? ? "-" : @sonsonate['PDC'] %></td>
+    <td><%= @sonsonate['PCN'].blank? ? "-" : @sonsonate['PCN'] %></td>
+    <td><%= @sonsonate['GANA'].blank? ? "-" : @sonsonate['GANA'] %></td>
+    <td><%= @sonsonate['CD'].blank? ? "-" : @sonsonate['CD'] %></td>
+    <td><%= @sonsonate['ARENA'].blank? ? "-" : @sonsonate['ARENA'] %></td>
+    <td><%= @sonsonate['DS'].blank? ? "-" : @sonsonate['DS'] %></td>
+    <td><%= @sonsonate['PCN-DS'].blank? ? "-" : @sonsonate['PCN-DS'] %></td>
+    <td><%= @sonsonate['NUEVAS IDEAS-GANA'].blank? ? "-" : @sonsonate['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @sonsonate['ARENA-DS'].blank? ? "-" : @sonsonate['ARENA-DS'] %></td>
+    <td><%= @sonsonate['ARENA-PCN'].blank? ? "-" : @sonsonate['ARENA-PCN'] %></td>
+    <td><%= @sonsonate['NO PARTIDARIO'].blank? ? "-" : @sonsonate['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">LA LIBERTAD</th>
+    <td><%= @la_libertad['FMLN'].blank? ? "-" : @la_libertad['FMLN'] %></td>
+    <td><%= @la_libertad['NUESTRO TIEMPO'].blank? ? "-" : @la_libertad['NUESTRO TIEMPO'] %></td>
+    <td><%= @la_libertad['NUEVAS IDEAS'].blank? ? "-" : @la_libertad['NUEVAS IDEAS'] %></td>
+    <td><%= @la_libertad['PDC'].blank? ? "-" : @la_libertad['PDC'] %></td>
+    <td><%= @la_libertad['PCN'].blank? ? "-" : @la_libertad['PCN'] %></td>
+    <td><%= @la_libertad['GANA'].blank? ? "-" : @la_libertad['GANA'] %></td>
+    <td><%= @la_libertad['CD'].blank? ? "-" : @la_libertad['CD'] %></td>
+    <td><%= @la_libertad['ARENA'].blank? ? "-" : @la_libertad['ARENA'] %></td>
+    <td><%= @la_libertad['DS'].blank? ? "-" : @la_libertad['DS'] %></td>
+    <td><%= @la_libertad['PCN-DS'].blank? ? "-" : @la_libertad['PCN-DS'] %></td>
+    <td><%= @la_libertad['NUEVAS IDEAS-GANA'].blank? ? "-" : @la_libertad['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @la_libertad['ARENA-DS'].blank? ? "-" : @la_libertad['ARENA-DS'] %></td>
+    <td><%= @la_libertad['ARENA-PCN'].blank? ? "-" : @la_libertad['ARENA-PCN'] %></td>
+    <td><%= @la_libertad['NO PARTIDARIO'].blank? ? "-" : @la_libertad['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">CHALATENANGO</th>
+    <td><%= @chalatenango['FMLN'].blank? ? "-" : @chalatenango['FMLN'] %></td>
+    <td><%= @chalatenango['NUESTRO TIEMPO'].blank? ? "-" : @chalatenango['NUESTRO TIEMPO'] %></td>
+    <td><%= @chalatenango['NUEVAS IDEAS'].blank? ? "-" : @chalatenango['NUEVAS IDEAS'] %></td>
+    <td><%= @chalatenango['PDC'].blank? ? "-" : @chalatenango['PDC'] %></td>
+    <td><%= @chalatenango['PCN'].blank? ? "-" : @chalatenango['PCN'] %></td>
+    <td><%= @chalatenango['GANA'].blank? ? "-" : @chalatenango['GANA'] %></td>
+    <td><%= @chalatenango['CD'].blank? ? "-" : @chalatenango['CD'] %></td>
+    <td><%= @chalatenango['ARENA'].blank? ? "-" : @chalatenango['ARENA'] %></td>
+    <td><%= @chalatenango['DS'].blank? ? "-" : @chalatenango['DS'] %></td>
+    <td><%= @chalatenango['PCN-DS'].blank? ? "-" : @chalatenango['PCN-DS'] %></td>
+    <td><%= @chalatenango['NUEVAS IDEAS-GANA'].blank? ? "-" : @chalatenango['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @chalatenango['ARENA-DS'].blank? ? "-" : @chalatenango['ARENA-DS'] %></td>
+    <td><%= @chalatenango['ARENA-PCN'].blank? ? "-" : @chalatenango['ARENA-PCN'] %></td>
+    <td><%= @chalatenango['NO PARTIDARIO'].blank? ? "-" : @chalatenango['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">CUSCATLAN</th>
+    <td><%= @cuscatlan['FMLN'].blank? ? "-" : @cuscatlan['FMLN'] %></td>
+    <td><%= @cuscatlan['NUESTRO TIEMPO'].blank? ? "-" : @cuscatlan['NUESTRO TIEMPO'] %></td>
+    <td><%= @cuscatlan['NUEVAS IDEAS'].blank? ? "-" : @cuscatlan['NUEVAS IDEAS'] %></td>
+    <td><%= @cuscatlan['PDC'].blank? ? "-" : @cuscatlan['PDC'] %></td>
+    <td><%= @cuscatlan['PCN'].blank? ? "-" : @cuscatlan['PCN'] %></td>
+    <td><%= @cuscatlan['GANA'].blank? ? "-" : @cuscatlan['GANA'] %></td>
+    <td><%= @cuscatlan['CD'].blank? ? "-" : @cuscatlan['CD'] %></td>
+    <td><%= @cuscatlan['ARENA'].blank? ? "-" : @cuscatlan['ARENA'] %></td>
+    <td><%= @cuscatlan['DS'].blank? ? "-" : @cuscatlan['DS'] %></td>
+    <td><%= @cuscatlan['PCN-DS'].blank? ? "-" : @cuscatlan['PCN-DS'] %></td>
+    <td><%= @cuscatlan['NUEVAS IDEAS-GANA'].blank? ? "-" : @cuscatlan['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @cuscatlan['ARENA-DS'].blank? ? "-" : @cuscatlan['ARENA-DS'] %></td>
+    <td><%= @cuscatlan['ARENA-PCN'].blank? ? "-" : @cuscatlan['ARENA-PCN'] %></td>
+    <td><%= @cuscatlan['NO PARTIDARIO'].blank? ? "-" : @cuscatlan['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">SAN SALVADOR</th>
+    <td><%= @san_salvador['FMLN'].blank? ? "-" : @san_salvador['FMLN'] %></td>
+    <td><%= @san_salvador['NUESTRO TIEMPO'].blank? ? "-" : @san_salvador['NUESTRO TIEMPO'] %></td>
+    <td><%= @san_salvador['NUEVAS IDEAS'].blank? ? "-" : @san_salvador['NUEVAS IDEAS'] %></td>
+    <td><%= @san_salvador['PDC'].blank? ? "-" : @san_salvador['PDC'] %></td>
+    <td><%= @san_salvador['PCN'].blank? ? "-" : @san_salvador['PCN'] %></td>
+    <td><%= @san_salvador['GANA'].blank? ? "-" : @san_salvador['GANA'] %></td>
+    <td><%= @san_salvador['CD'].blank? ? "-" : @san_salvador['CD'] %></td>
+    <td><%= @san_salvador['ARENA'].blank? ? "-" : @san_salvador['ARENA'] %></td>
+    <td><%= @san_salvador['DS'].blank? ? "-" : @san_salvador['DS'] %></td>
+    <td><%= @san_salvador['PCN-DS'].blank? ? "-" : @san_salvador['PCN-DS'] %></td>
+    <td><%= @san_salvador['NUEVAS IDEAS-GANA'].blank? ? "-" : @san_salvador['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @san_salvador['ARENA-DS'].blank? ? "-" : @san_salvador['ARENA-DS'] %></td>
+    <td><%= @san_salvador['ARENA-PCN'].blank? ? "-" : @san_salvador['ARENA-PCN'] %></td>
+    <td><%= @san_salvador['NO PARTIDARIO'].blank? ? "-" : @san_salvador['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">LA PAZ</th>
+    <td><%= @la_paz['FMLN'].blank? ? "-" : @la_paz['FMLN'] %></td>
+    <td><%= @la_paz['NUESTRO TIEMPO'].blank? ? "-" : @la_paz['NUESTRO TIEMPO'] %></td>
+    <td><%= @la_paz['NUEVAS IDEAS'].blank? ? "-" : @la_paz['NUEVAS IDEAS'] %></td>
+    <td><%= @la_paz['PDC'].blank? ? "-" : @la_paz['PDC'] %></td>
+    <td><%= @la_paz['PCN'].blank? ? "-" : @la_paz['PCN'] %></td>
+    <td><%= @la_paz['GANA'].blank? ? "-" : @la_paz['GANA'] %></td>
+    <td><%= @la_paz['CD'].blank? ? "-" : @la_paz['CD'] %></td>
+    <td><%= @la_paz['ARENA'].blank? ? "-" : @la_paz['ARENA'] %></td>
+    <td><%= @la_paz['DS'].blank? ? "-" : @la_paz['DS'] %></td>
+    <td><%= @la_paz['PCN-DS'].blank? ? "-" : @la_paz['PCN-DS'] %></td>
+    <td><%= @la_paz['NUEVAS IDEAS-GANA'].blank? ? "-" : @la_paz['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @la_paz['ARENA-DS'].blank? ? "-" : @la_paz['ARENA-DS'] %></td>
+    <td><%= @la_paz['ARENA-PCN'].blank? ? "-" : @la_paz['ARENA-PCN'] %></td>
+    <td><%= @la_paz['NO PARTIDARIO'].blank? ? "-" : @la_paz['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">CABAÑAS</th>
+    <td><%= @cabanas['FMLN'].blank? ? "-" : @cabanas['FMLN'] %></td>
+    <td><%= @cabanas['NUESTRO TIEMPO'].blank? ? "-" : @cabanas['NUESTRO TIEMPO'] %></td>
+    <td><%= @cabanas['NUEVAS IDEAS'].blank? ? "-" : @cabanas['NUEVAS IDEAS'] %></td>
+    <td><%= @cabanas['PDC'].blank? ? "-" : @cabanas['PDC'] %></td>
+    <td><%= @cabanas['PCN'].blank? ? "-" : @cabanas['PCN'] %></td>
+    <td><%= @cabanas['GANA'].blank? ? "-" : @cabanas['GANA'] %></td>
+    <td><%= @cabanas['CD'].blank? ? "-" : @cabanas['CD'] %></td>
+    <td><%= @cabanas['ARENA'].blank? ? "-" : @cabanas['ARENA'] %></td>
+    <td><%= @cabanas['DS'].blank? ? "-" : @cabanas['DS'] %></td>
+    <td><%= @cabanas['PCN-DS'].blank? ? "-" : @cabanas['PCN-DS'] %></td>
+    <td><%= @cabanas['NUEVAS IDEAS-GANA'].blank? ? "-" : @cabanas['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @cabanas['ARENA-DS'].blank? ? "-" : @cabanas['ARENA-DS'] %></td>
+    <td><%= @cabanas['ARENA-PCN'].blank? ? "-" : @cabanas['ARENA-PCN'] %></td>
+    <td><%= @cabanas['NO PARTIDARIO'].blank? ? "-" : @cabanas['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">SAN VICENTE</th>
+    <td><%= @san_vicente['FMLN'].blank? ? "-" : @san_vicente['FMLN'] %></td>
+    <td><%= @san_vicente['NUESTRO TIEMPO'].blank? ? "-" : @san_vicente['NUESTRO TIEMPO'] %></td>
+    <td><%= @san_vicente['NUEVAS IDEAS'].blank? ? "-" : @san_vicente['NUEVAS IDEAS'] %></td>
+    <td><%= @san_vicente['PDC'].blank? ? "-" : @san_vicente['PDC'] %></td>
+    <td><%= @san_vicente['PCN'].blank? ? "-" : @san_vicente['PCN'] %></td>
+    <td><%= @san_vicente['GANA'].blank? ? "-" : @san_vicente['GANA'] %></td>
+    <td><%= @san_vicente['CD'].blank? ? "-" : @san_vicente['CD'] %></td>
+    <td><%= @san_vicente['ARENA'].blank? ? "-" : @san_vicente['ARENA'] %></td>
+    <td><%= @san_vicente['DS'].blank? ? "-" : @san_vicente['DS'] %></td>
+    <td><%= @san_vicente['PCN-DS'].blank? ? "-" : @san_vicente['PCN-DS'] %></td>
+    <td><%= @san_vicente['NUEVAS IDEAS-GANA'].blank? ? "-" : @san_vicente['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @san_vicente['ARENA-DS'].blank? ? "-" : @san_vicente['ARENA-DS'] %></td>
+    <td><%= @san_vicente['ARENA-PCN'].blank? ? "-" : @san_vicente['ARENA-PCN'] %></td>
+    <td><%= @san_vicente['NO PARTIDARIO'].blank? ? "-" : @san_vicente['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">USULUTAN</th>
+    <td><%= @usulutan['FMLN'].blank? ? "-" : @usulutan['FMLN'] %></td>
+    <td><%= @usulutan['NUESTRO TIEMPO'].blank? ? "-" : @usulutan['NUESTRO TIEMPO'] %></td>
+    <td><%= @usulutan['NUEVAS IDEAS'].blank? ? "-" : @usulutan['NUEVAS IDEAS'] %></td>
+    <td><%= @usulutan['PDC'].blank? ? "-" : @usulutan['PDC'] %></td>
+    <td><%= @usulutan['PCN'].blank? ? "-" : @usulutan['PCN'] %></td>
+    <td><%= @usulutan['GANA'].blank? ? "-" : @usulutan['GANA'] %></td>
+    <td><%= @usulutan['CD'].blank? ? "-" : @usulutan['CD'] %></td>
+    <td><%= @usulutan['ARENA'].blank? ? "-" : @usulutan['ARENA'] %></td>
+    <td><%= @usulutan['DS'].blank? ? "-" : @usulutan['DS'] %></td>
+    <td><%= @usulutan['PCN-DS'].blank? ? "-" : @usulutan['PCN-DS'] %></td>
+    <td><%= @usulutan['NUEVAS IDEAS-GANA'].blank? ? "-" : @usulutan['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @usulutan['ARENA-DS'].blank? ? "-" : @usulutan['ARENA-DS'] %></td>
+    <td><%= @usulutan['ARENA-PCN'].blank? ? "-" : @usulutan['ARENA-PCN'] %></td>
+    <td><%= @usulutan['NO PARTIDARIO'].blank? ? "-" : @usulutan['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">SAN MIGUEL</th>
+    <td><%= @san_miguel['FMLN'].blank? ? "-" : @san_miguel['FMLN'] %></td>
+    <td><%= @san_miguel['NUESTRO TIEMPO'].blank? ? "-" : @san_miguel['NUESTRO TIEMPO'] %></td>
+    <td><%= @san_miguel['NUEVAS IDEAS'].blank? ? "-" : @san_miguel['NUEVAS IDEAS'] %></td>
+    <td><%= @san_miguel['PDC'].blank? ? "-" : @san_miguel['PDC'] %></td>
+    <td><%= @san_miguel['PCN'].blank? ? "-" : @san_miguel['PCN'] %></td>
+    <td><%= @san_miguel['GANA'].blank? ? "-" : @san_miguel['GANA'] %></td>
+    <td><%= @san_miguel['CD'].blank? ? "-" : @san_miguel['CD'] %></td>
+    <td><%= @san_miguel['ARENA'].blank? ? "-" : @san_miguel['ARENA'] %></td>
+    <td><%= @san_miguel['DS'].blank? ? "-" : @san_miguel['DS'] %></td>
+    <td><%= @san_miguel['PCN-DS'].blank? ? "-" : @san_miguel['PCN-DS'] %></td>
+    <td><%= @san_miguel['NUEVAS IDEAS-GANA'].blank? ? "-" : @san_miguel['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @san_miguel['ARENA-DS'].blank? ? "-" : @san_miguel['ARENA-DS'] %></td>
+    <td><%= @san_miguel['ARENA-PCN'].blank? ? "-" : @san_miguel['ARENA-PCN'] %></td>
+    <td><%= @san_miguel['NO PARTIDARIO'].blank? ? "-" : @san_miguel['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">MORAZAN</th>
+    <td><%= @morazan['FMLN'].blank? ? "-" : @morazan['FMLN'] %></td>
+    <td><%= @morazan['NUESTRO TIEMPO'].blank? ? "-" : @morazan['NUESTRO TIEMPO'] %></td>
+    <td><%= @morazan['NUEVAS IDEAS'].blank? ? "-" : @morazan['NUEVAS IDEAS'] %></td>
+    <td><%= @morazan['PDC'].blank? ? "-" : @morazan['PDC'] %></td>
+    <td><%= @morazan['PCN'].blank? ? "-" : @morazan['PCN'] %></td>
+    <td><%= @morazan['GANA'].blank? ? "-" : @morazan['GANA'] %></td>
+    <td><%= @morazan['CD'].blank? ? "-" : @morazan['CD'] %></td>
+    <td><%= @morazan['ARENA'].blank? ? "-" : @morazan['ARENA'] %></td>
+    <td><%= @morazan['DS'].blank? ? "-" : @morazan['DS'] %></td>
+    <td><%= @morazan['PCN-DS'].blank? ? "-" : @morazan['PCN-DS'] %></td>
+    <td><%= @morazan['NUEVAS IDEAS-GANA'].blank? ? "-" : @morazan['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @morazan['ARENA-DS'].blank? ? "-" : @morazan['ARENA-DS'] %></td>
+    <td><%= @morazan['ARENA-PCN'].blank? ? "-" : @morazan['ARENA-PCN'] %></td>
+    <td><%= @morazan['NO PARTIDARIO'].blank? ? "-" : @morazan['NO PARTIDARIO'] %></td>
+</tr>
+
+<tr>
+    <th scope="row">LA UNION</th>
+    <td><%= @la_union['FMLN'].blank? ? "-" : @la_union['FMLN'] %></td>
+    <td><%= @la_union['NUESTRO TIEMPO'].blank? ? "-" : @la_union['NUESTRO TIEMPO'] %></td>
+    <td><%= @la_union['NUEVAS IDEAS'].blank? ? "-" : @la_union['NUEVAS IDEAS'] %></td>
+    <td><%= @la_union['PDC'].blank? ? "-" : @la_union['PDC'] %></td>
+    <td><%= @la_union['PCN'].blank? ? "-" : @la_union['PCN'] %></td>
+    <td><%= @la_union['GANA'].blank? ? "-" : @la_union['GANA'] %></td>
+    <td><%= @la_union['CD'].blank? ? "-" : @la_union['CD'] %></td>
+    <td><%= @la_union['ARENA'].blank? ? "-" : @la_union['ARENA'] %></td>
+    <td><%= @la_union['DS'].blank? ? "-" : @la_union['DS'] %></td>
+    <td><%= @la_union['PCN-DS'].blank? ? "-" : @la_union['PCN-DS'] %></td>
+    <td><%= @la_union['NUEVAS IDEAS-GANA'].blank? ? "-" : @la_union['NUEVAS IDEAS-GANA'] %></td>
+    <td><%= @la_union['ARENA-DS'].blank? ? "-" : @la_union['ARENA-DS'] %></td>
+    <td><%= @la_union['ARENA-PCN'].blank? ? "-" : @la_union['ARENA-PCN'] %></td>
+    <td><%= @la_union['NO PARTIDARIO'].blank? ? "-" : @la_union['NO PARTIDARIO'] %></td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+
+</br>
+<div class="table-responsive">
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th scope="col">PARTIDO</th>
+        <th scope="col">ENTEROS</th>
+    </tr>
+</thead>
+<tbody>
+<% @total_por_partido.each do |partido,enteros|  %>
+    <tr>
+        <td><%= partido %></td>
+        <td> <%= enteros %></td>
+    </tr>
+<% end %>
+</tbody>
+</table>
+
+</div>
+</div>

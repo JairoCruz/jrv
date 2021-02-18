@@ -1,15 +1,18 @@
+<div class="container">
 <h1>Departamentos</h1>
 <table class="table table-bordered">
 <thead>
 <tr>
-     <th scope="col">Nombre</th>
-     <th scope="col">Acciones</th>
+     <th scope="col">DEPARTAMENTO</th>
+     <th scope="col">JRV</th>
+     <th scope="col">ACCIONES</th>
 </tr>
 </thead> 
 <tbody>
     <% @departamentos.each do |departamento| %>
         <tr>
            <td><%= link_to departamento.name, departamento %></td>
+           <td><%= link_to departamento.junta, departamento %></td>
            <td>
            <%= link_to "Edit", edit_departamento_path(departamento), class: "btn btn-secondary" %> |
            <%= link_to "Destroy", departamento_path(departamento), method: :delete, data: { confirm: "¿Estas seguro?"}, class: "btn btn-danger" %>
@@ -18,5 +21,8 @@
     <% end %>
     </tbody>
 </table>
+<%= will_paginate @departamentos, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+</br>
 
 <%= link_to "Nuevo", new_departamento_path, class: "btn btn-primary" %>
+</div>

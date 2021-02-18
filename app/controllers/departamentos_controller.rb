@@ -1,7 +1,8 @@
 class DepartamentosController < ApplicationController
   
   def index
-    @departamentos = Departamento.all
+    # @departamentos = Departamento.all
+    @departamentos = Departamento.paginate(:page => params[:page], :per_page => 4)
   end
 
   
@@ -11,6 +12,7 @@ class DepartamentosController < ApplicationController
 
   def new
     @departamento = Departamento.new
+    10.times { @departamento.jrvs.build }
   end
 
   def create
@@ -47,7 +49,7 @@ class DepartamentosController < ApplicationController
 
   private
     def departamento_params
-      params.require(:departamento).permit(:name)
+      params.require(:departamento).permit(:name, :junta, jrvs_attributes: [:id, :partido, :enteros, :fraccionados, :_destroy])
     end
 
 

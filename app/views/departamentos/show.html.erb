@@ -1,37 +1,44 @@
-<h1>Show</h1>
-<p>
-<%= @departamento.name %>
-</p>
-<h2>Agrega una JRV</h2>
-<%= form_with model: [@departamento, @departamento.jrvs.build ] do |f| %>
-    <p>
-        <%= f.label :junta %>
-        <%= f.text_field :junta %>
-    </p>
-    <p>
-        <%= f.label :municipio %>
-        <%= f.text_field :municipio %>
-    </p>
-    
-   
-    
-    <%= f.submit %>
-<% end %>
+<div class="container">
+</br>
+<h1><%= @departamento.name %></h1>
+<h3>JRV N° <%= @departamento.junta %> </h3>
 
-<h3>JRVs</h3>
+</br>
+<h5>RESULTADOS</h5>
+<div class="table-responsive">
 <table class="table table-bordered">
 <thead>
 <tr>
-     <th scope="col">N° JRV</th>
-     <th scope="col">Municipio</th>
+     <th scope="col">PARTIDOS</th>
+     <th scope="col">ENTEROS</th>
+     <th scope="col">FRACCIONADOS</th>
+     <th scope="col">TOTAL</th>
+
 </tr>
 </thead> 
 <tbody>
     <% @departamento.jrvs.each do |jrv| %>
         <tr>
-           <td><%= link_to jrv.junta, [jrv.departamento, jrv] %></td>
-           <td><%= jrv.municipio %></td>
+           <td><%= jrv.partido %></td>
+           <td><%= jrv.enteros %></td>
+           <td><%= "%.8f" % jrv.fraccionados %></td>
+           <td><%= "%.8f" % jrv.total %></td>
         </tr>
     <% end %>
 </tbody>
+<tfoot>
+    <tr>
+        <td><strong>TOTAL</strong></td>
+        <td><strong><%= @departamento.jrvs.sum(:enteros) %></strong></td>
+        <td><strong><%= "%.8f" % @departamento.jrvs.sum(:fraccionados) %></strong></td>
+        <td><strong><%= "%.8f" % @departamento.jrvs.sum(:total) %></strong></td>
+    </tr>
+
+</tfoot>
 </table>
+
+</div>
+
+<%= link_to "Nueva JRV", new_departamento_path, class: "btn btn-primary" %>
+<%= link_to "Regresar", departamentos_path, class: "btn btn-secondary"%>
+</div>

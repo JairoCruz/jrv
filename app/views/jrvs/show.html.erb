@@ -1,21 +1,5 @@
 <h1>Show</h1>
 <p>
+<div class="container">
 <%= @jrv.junta %>
-</p>
-<%= form_with model: @jrv do |f| %>
-    <ul>
-    <%= f.fields_for :votos do |f_v| %>
-        <li>
-        <%= f_v.label :partido %>
-        <%= f_v.text_field :partido %>
-
-        <%= f_v.label :enteros %>
-        <%= f_v.text_field :enteros %>
-        
-        <%= f_v.label :fraccionados %>
-        <%= f_v.text_field :fraccionados %>
-        </li>
-    <% end %>
-    </ul>
-    <%= f.submit %>
-<% end %>
+</div>

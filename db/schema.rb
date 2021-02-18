@@ -10,37 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_12_200752) do
+ActiveRecord::Schema.define(version: 2021_02_10_201221) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "departamentos", force: :cascade do |t|
     t.string "name"
+    t.integer "junta"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "jrvs", force: :cascade do |t|
-    t.integer "junta"
-    t.text "municipio"
-    t.bigint "departamento_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.bigint "voto_id"
-    t.index ["departamento_id"], name: "index_jrvs_on_departamento_id"
-    t.index ["voto_id"], name: "index_jrvs_on_voto_id"
-  end
-
-  create_table "votos", force: :cascade do |t|
     t.string "partido"
     t.integer "enteros"
     t.float "fraccionados"
     t.float "total"
+    t.bigint "departamento_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["departamento_id"], name: "index_jrvs_on_departamento_id"
   end
 
   add_foreign_key "jrvs", "departamentos"
-  add_foreign_key "jrvs", "votos"
 end
