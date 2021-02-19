@@ -18,6 +18,22 @@ class JrvsController < ApplicationController
        @san_miguel = Jrv.san_miguel_x_partido_total
        @morazan = Jrv.morazan_x_partido_total
        @la_union = Jrv.la_union_x_partido_total
+
+       @ahuachapan_total = Jrv.ahuachapan_total
+       @santa_ana_total = Jrv.santa_ana_total
+       @sonsonate_total = Jrv.sonsonate_total
+       @la_libertad_total = Jrv.la_libertad_total
+       @chalatenango_total = Jrv.chalatenango_total
+       @cuscatlan_total = Jrv.cuscatlan_total
+       @san_salvador_total = Jrv.san_salvador_total
+       @la_paz_total = Jrv.la_paz_total
+       @cabanas_total = Jrv.cabanas_total
+       @san_vicente_total = Jrv.san_vicente_total
+       @usulutan_total = Jrv.usulutan_total
+       @san_miguel_total = Jrv.san_miguel_total
+       @morazan_total = Jrv.morazan_total
+       @la_union_total = Jrv.la_union_total
+
     end
     
     def create 
