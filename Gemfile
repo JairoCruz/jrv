@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.0'
 
+gem 'bundler','~> 2.2'
+
 # This gem work for paginate and bootstrap
 gem 'will_paginate-bootstrap4'
 
