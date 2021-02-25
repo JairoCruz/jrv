@@ -22,13 +22,21 @@
           </div>
 
           <div class="col-auto">
-            <%= f.label :enteros, "Enteros", class: "form-label" %><br>
-            <%= f.text_field :enteros , class: "form-control" %>
+            <%= f.label :enteros, "Enteros", class: "form-label" %>
+            
+            <%= f.text_field :enteros , class: "form-control"%>
+            <% @departamento.errors.full_messages_for(:'jrvs.enteros').each do |message| %>
+              <div><%= message %></div>
+            <% end %>
           </div>
 
           <div class="col-auto">
-            <%= f.label :fraccionados, "Fraccionados", class: "form-label" %><br>
-            <%= f.text_field :fraccionados , class: "form-control" %>
+            <%= f.label :fraccionados, "Fraccionados", class: "form-label" %>
+            
+            <%= f.text_field :fraccionados , class: "form-control"%>
+            <% @departamento.errors.full_messages_for(:'jrvs.fraccionados').each do |message| %>
+              <div><%= message %></div>
+            <% end %>
           </div>
 
           <div class="col-auto">

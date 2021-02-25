@@ -44,7 +44,7 @@ class JrvsController < ApplicationController
 
     def show 
        @jrv = Jrv.find(params[:id])
-       2.times { @jrv.votos.build }
+       #2.times { @jrv.votos.build }
     end
 
     private

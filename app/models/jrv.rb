@@ -2,6 +2,8 @@ class Jrv < ApplicationRecord
 
     before_save :sum_enteros_fraccionados_to_total
 
+    validates :enteros, :fraccionados, presence: true
+
     belongs_to :departamento
 
     scope :ahuachapan_x_partido_total, -> { includes(:departamento).where(departamento: {name: "AHUACHAPAN"}).group(:partido).sum(:total)}
